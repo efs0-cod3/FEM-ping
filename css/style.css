@@ -62,6 +62,17 @@
     display: block;
 }
 
+.w-alert{
+    color: hsl(354, 100%, 66%);
+    margin-bottom: 62px;
+    font-size: .8rem;
+    display: none;
+}
+
+.w-alert--active{
+    display: block;
+}
+
 .email__btn {
     width: 100%;
     padding: 15px;
@@ -184,6 +195,11 @@
     }
 
     .alert {
+        position: absolute;
+        top: 502px;
+        left: 335px;
+    }
+    .w-alert{
         position: absolute;
         top: 502px;
         left: 335px;
