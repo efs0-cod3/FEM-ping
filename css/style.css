@@ -78,6 +78,15 @@
     background: hsl(223, 100%, 88%);
 }
 
+.btn--success{
+    background: #4bb543;
+    box-shadow: 0 6px 8px rgba(75, 213, 130, 0.3);
+}
+
+.btn--success:hover{
+    background: hsl(128, 32%, 63%);
+}
+
 .img__container {
     margin-top: 50px;
     display: flex;
