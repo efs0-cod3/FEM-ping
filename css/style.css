@@ -141,7 +141,6 @@
 }
 
 @media screen and (min-width: 400px) {
-
     .wrapper {
         width: 750px;
         padding: 0 93px;
@@ -172,8 +171,16 @@
 }
 
 @media screen and (min-width:900px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .wrapper {
-        width: 100vw;
+        padding: 0;
+        width: 645px;
     }
 
     .form {
@@ -182,10 +189,7 @@
     }
 
     .email {
-        display: flex;
-        width: 40%;
-        margin-right: 30px;
-
+         margin-right: 30px;
     }
 
     .email__btn {
@@ -197,12 +201,12 @@
     .alert {
         position: absolute;
         top: 502px;
-        left: 335px;
+        left: 651px;
     }
     .w-alert{
         position: absolute;
         top: 502px;
-        left: 335px;
+        left: 651px;
     }
 
     .img__container img {
