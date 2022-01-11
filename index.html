@@ -10,9 +10,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet"> 
 
+<!-- icon -->
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 <!-- css  -->
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
 
   <title>Frontend Mentor | Ping coming soon page</title>
 
@@ -24,28 +27,37 @@
 </head>
 <body>
 <main>
-  <header>
-    <img src="images/logo.svg" alt="" class="logo">
-  </header>
-<article class="container">
-
-  <section class="description">
-   <h1> We are launching <span>soon!</span></h1>
-
-  <p>Subscribe and get notified</p>
-  <input type="text" placeholder="Your email address...">
-
- <button>Notify Me</button>
-  </section>
-<section class="img-container">
-
-</section>
-</article>
-
-<!-- <i class='bx bxl-facebook' ></i>
-<i class='bx bxl-twitter' ></i>
-<i class='bx bxl-instagram'></i> -->
-  &copy; Copyright Ping. All rights reserved.
+  <div class="wrapper">
+    <header class="logo">
+      <img src="images/logo.svg" alt="" >
+    </header>
+  <section class="container">
+  
+    <article class="description">
+     <h1 class="description__title"> We are launching <span>soon!</span></h1>
+  
+    <p class="description__note">Subscribe and get notified</p>
+  
+    <input class="email" type="text" placeholder="Your email address...">
+  
+   <button class="email__btn">Notify Me</button>
+    </article>
+  </secrion>
+  <section class="img__container">
+    <img src="images/illustration-dashboard.png" alt="">
+    </section>
+  </div>
+  <div class="foot">
+    <div class="socials">
+      <i class='bx fb bx-sm bxl-facebook' ></i>
+      <i class='bx tw bx-sm bxl-twitter' ></i>
+      <i class='bx ig bx-sm bxl-instagram'></i>
+    </div>
+    <div class="copyright">
+      &copy; Copyright Ping. All rights reserved.
+      <p></p>
+    </div>
+  </div>
 </main>
   <footer>
     <p class="attribution">

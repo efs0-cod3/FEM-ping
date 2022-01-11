@@ -1,12 +1,98 @@
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper{
     width: 375px;
-    height: 100vh;
+    padding: 0 50px;
+}
+
+.logo{
+    margin-top: 170px;
+    margin-bottom: 69px;
+    text-align: center;
+}
+
+.container{
+    text-align: center;   
+}
+
+.description__title{
+margin-bottom: 50px;
+font-size: 1.5rem;
+font-weight: 300;
+color:  hsl(0, 0%, 59%);
+}
+
+.description__title span{
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+.description__note{
+margin-bottom: 67px;
+color: hsl(209, 33%, 12%);
+}
+
+.email{
+width: 100%;
+margin-bottom: 20px;
+padding: 15px 0 15px 20px;
+border-radius: 50px;
+border: solid 1px hsl(223, 100%, 88%);
+}
+
+.email:focus{
+    outline: none;
+}
+
+.email::placeholder{
+    color: hsl(223, 100%, 88%);
     
-    }
+}
+
+.email__btn{
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background: hsl(223, 87%,63%);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 8px rgba(79,125,243, .3);
+
+}
+
+.img__container{
+    margin-top: 50px;
+display: flex;
+justify-content: center;
+margin-bottom: 100px;
+}
+.img__container img{
+
+    width: 322px;
+    height: 195px;
+}
+
+.foot{
+    width: 375px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.bx{
+    border: solid 1px hsl(223, 100%, 88%);
+    border-radius: 50%;
+    padding: 5px;
+    margin-bottom: 20px;
+    color: hsl(223, 87%, 63%);
+}
+
+.fb, .tw{
+    margin-right: 5px;
+}
+.tw, .ig{
+    margin-left: 5px;
+}
+
 
     /* ### Primary
     
