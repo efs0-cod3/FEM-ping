@@ -30,7 +30,7 @@ let addSuccess = () => {
     setTimeout(() => {
         removeSuccess();
         email.value = '';
-    }, 2000);
+    }, 1000);
 }
 
 
