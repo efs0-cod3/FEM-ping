@@ -1,109 +1,191 @@
-
-.wrapper{
+.wrapper {
     width: 375px;
     padding: 0 50px;
 }
 
-.logo{
+.logo {
     margin-top: 170px;
     margin-bottom: 69px;
     text-align: center;
 }
 
-.container{
-    text-align: center;   
+.container {
+    text-align: center;
 }
 
-.description__title{
-margin-bottom: 50px;
-font-size: 1.5rem;
-font-weight: 300;
-color:  hsl(0, 0%, 59%);
+.description__title {
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
 }
 
-.description__title span{
+.description__title span {
     font-weight: 700;
     color: hsl(209, 33%, 12%);
 }
-.description__note{
-margin-bottom: 67px;
-color: hsl(209, 33%, 12%);
+
+.description__note {
+    color: hsl(209, 33%, 12%);
+    margin-bottom: 67px;
 }
 
-.email{
-width: 100%;
-margin-bottom: 20px;
-padding: 15px 0 15px 20px;
-border-radius: 50px;
-border: solid 1px hsl(223, 100%, 88%);
+
+.email {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 0 15px 20px;
+    border-radius: 50px;
+    border: solid 1px hsl(223, 100%, 88%);
 }
 
-.email:focus{
+.email--active {
+    border: 1.2px solid hsl(354, 100%, 66%);
+}
+
+.email:focus {
     outline: none;
 }
 
-.email::placeholder{
+.email::placeholder {
     color: hsl(223, 100%, 88%);
-    
 }
 
-.email__btn{
+.alert {
+    color: hsl(354, 100%, 66%);
+    margin-bottom: 62px;
+    font-size: .8rem;
+    display: none;
+}
+
+.alert--active {
+    display: block;
+}
+
+.email__btn {
     width: 100%;
     padding: 15px;
     border-radius: 50px;
     border: none;
-    background: hsl(223, 87%,63%);
+    background: hsl(223, 87%, 63%);
     color: white;
     font-weight: 700;
     cursor: pointer;
-    box-shadow: 0 6px 8px rgba(79,125,243, .3);
-
+    box-shadow: 0 6px 8px rgba(79, 125, 243, .3);
 }
 
-.img__container{
+.email__btn:hover{
+    background: hsl(223, 100%, 88%);
+}
+
+.img__container {
     margin-top: 50px;
-display: flex;
-justify-content: center;
-margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
 }
-.img__container img{
+
+.img__container img {
 
     width: 322px;
     height: 195px;
 }
 
-.foot{
+.foot {
     width: 375px;
     padding: 0 50px;
     text-align: center;
 }
 
-.bx{
+.bx {
     border: solid 1px hsl(223, 100%, 88%);
     border-radius: 50%;
     padding: 5px;
     margin-bottom: 20px;
     color: hsl(223, 87%, 63%);
+    cursor: pointer;
 }
 
-.fb, .tw{
+.fb,
+.tw {
     margin-right: 5px;
 }
-.tw, .ig{
+
+.tw,
+.ig {
     margin-left: 5px;
 }
 
+.copyright {
+    color: hsl(0, 0%, 59%);
+}
 
-    /* ### Primary
-    
-    - Blue: hsl(223, 87%, 63%)
-    
-    ### Secondary
-    
-    - Pale Blue: hsl(223, 100%, 88%)
-    - Light Red: hsl(354, 100%, 66%)
-    
-    ### Neutral
-    
-    - Gray: hsl(0, 0%, 59%)
-    - Very Dark Blue: hsl(209, 33%, 12%) */
+@media screen and (min-width: 400px) {
+
+    .wrapper {
+        width: 750px;
+        padding: 0 93px;
+    }
+
+    .description__title {
+        font-size: 3rem;
+    }
+
+    .description__note {
+        font-size: 1.2rem;
+    }
+
+    .img__container img {
+        width: 645px;
+        height: 384px;
+    }
+
+    .alert {
+        font-size: 1rem;
+    }
+
+    .foot {
+        width: 750px;
+    }
+
+
+}
+
+@media screen and (min-width:900px) {
+    .wrapper {
+        width: 100vw;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .email {
+        display: flex;
+        width: 40%;
+        margin-right: 30px;
+
+    }
+
+    .email__btn {
+        width: fit-content;
+        padding: 0 60px;
+        height: 48px;
+    }
+
+    .alert {
+        position: absolute;
+        top: 502px;
+        left: 335px;
+    }
+
+    .img__container img {
+        width: 645px;
+        height: 392px;
+    }
+
+    .foot {
+        width: 100vw;
+    }
+}
